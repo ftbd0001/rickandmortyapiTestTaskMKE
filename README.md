@@ -32,37 +32,3 @@ npm run serve
 
 Приложение будет доступно по адресу: `http://localhost:8080`
 
-## Структура проекта
-
-rick-and-morty-app/
-│
-├── node_modules/         # Установленные npm модули
-├── public/               # Публичные файлы
-│   └── index.html        # Основной HTML файл
-│
-├── src/                  # Исходный код приложения
-│   ├── assets/           # Статические ресурсы (изображения, стили и т.д.)
-│   ├── components/       # Компоненты Vue
-│   │   └── CharacterList.vue  # Компонент списка персонажей
-│   │
-│   ├── services/         # Сервисы и утилиты
-│   │   └── api.js        # API клиент для взаимодействия с Rick and Morty API
-│   │
-│   ├── App.vue           # Главный компонент приложения
-│   └── main.js           # Точка входа в приложение
-│
-├── .gitignore            # Файл игнорирования Git
-├── package.json          # Файл зависимостей и скриптов npm
-└── README.md             # Описание проекта
-
-## Деплой на GitHub Pages
-
-1. Установите плагин для деплоя:
-
-   npm install gh-pages --save-dev
-
-2. Добавьте скрипты деплоя в `package.json`:
-
-   "scripts": {
-     "deploy": "vue-cli-service build && gh-pages -d dist"
-   }
